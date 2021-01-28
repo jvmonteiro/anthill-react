@@ -17,6 +17,7 @@ export default function MainPage() {
         setProjects(result.data);
       }
     };
+
     fetchProjects();
   }, []);
   const renderProjectList =
@@ -29,7 +30,8 @@ export default function MainPage() {
       </Head>
       <Layout>
         <SiteHeader />
-        <Layout.Content style={{ margin: '5em' }}>
+        <Layout.Content style={{ margin: '2em' }}>
+          <h1>Your top projects</h1>
           <Row
             gutter={[
               { xs: 24, md: 40, lg: 32, xl: 40 },

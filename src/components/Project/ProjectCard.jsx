@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Card, Row, Col, Space } from 'antd';
-import { Loading3QuartersOutlined, BranchesOutlined, GithubFilled } from '@ant-design/icons';
+import { HistoryOutlined, BranchesOutlined, GithubFilled } from '@ant-design/icons';
 export function ProjectCard({ title, description, progress, features, url }) {
   const projectTitle = (
     <div>
@@ -19,7 +19,7 @@ export function ProjectCard({ title, description, progress, features, url }) {
         <Row justify='space-around' align='bottom'>
           <Col md={10}>
             <div>
-              <Loading3QuartersOutlined style={{ marginRight: '1.25em' }} />
+              <HistoryOutlined style={{ marginRight: '1.25em' }} />
               {progress}
             </div>
           </Col>
